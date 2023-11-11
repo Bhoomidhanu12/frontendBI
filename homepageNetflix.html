@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            background-color: #111;
+            padding: 1em 2%;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        header img {
+            width: 100px;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 50px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            padding-top: 70px;
+            text-align: center;
+        }
+
+        .featured-content {
+            position: relative;
+            height: 100vh;
+            width:150wh;
+            background: url("https://tse3.mm.bing.net/th?id=OIP.6G1QwzQsY9iJ0YisRsy51AHaEK&pid=Api&P=0&h=180") center/cover no-repeat;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .featured-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .movie-list {
+            display: flex;
+            overflow-x: scroll;
+            padding: 20px;
+        }
+
+        .movie-list img {
+            width: 200px;
+            object-fit: cover;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://vignette2.wikia.nocookie.net/logopedia/images/b/b2/NetflixIcon2016.jpg/revision/latest/scale-to-width-down/2000?cb=20160620223003" alt="Netflix Logo">
+            <ul>
+                <li>Browse</li>
+                <li>My List</li>
+                <li>Top Picks</li>
+                <li>Recent</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="featured-content">
+            <h1>
+    
+            </h1>
+            <div class="buttons">
+                <button>Play</button>
+                <button>My List</button>
+            </div>
+        </div>
+
+        <div class="movie-list">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.Quti2pazlZhLhjItWalgHgHaEK&pid=Api&P=0&h=180" alt="movie1">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.TtZ-vfTon6Gz-cpbG2IiCwHaEK&pid=Api&P=0&h=180" alt="movie2 ">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.wpeFUCXajtZPXQHw1tmy1QHaEK&pid=Api&P=0&h=180" alt="movie3">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Xs2Pi1eWk4YUBU8GJsn5AgHaEK&pid=Api&P=0&h=180=" alt="movie4">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.XOHv0JekDogl-qAL_JcVFwHaEK&pid=Api&P=0&h=180" alt="movie5">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Fp9Q0x35UwTwyhOzcJhLIwHaFV&pid=Api&P=0&h=180" alt="movie6">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Netflix. All rights reserved.</p>
+    </footer>
+</body>
+</html>
